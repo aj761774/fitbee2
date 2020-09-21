@@ -22,10 +22,18 @@
                 <i class="fas fa-bars"></i>
             </label>
             <ul>
-                <li><a class="active" href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#our-services">Services</a></li>
+                <li><a class="" href="#">Home</a></li>
+                
+                <li><div class="dropdown">
+                    <a class=" dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="false" aria-expanded="false">
+                      Services
+                    </a>
+                    <div class="dropdown-menu " aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="#">Diet-Plan</a>
+                      <a class="dropdown-item" href="#">Fit-मित्र</a>
+                      <a class="dropdown-item" href="#">here</a>
+                    </div>
+                  </div></li>
                 <li><a href="#">Leaderboard</a></li>
                 <li><a href="#">Fitcoon TV</a></li>
                 <li><a href="#" class=""><button>SIGNUP</button></a></li>
@@ -71,7 +79,7 @@
     </div>
     <!-- COVER PIC ENDS -->  
 
-    <section class="search-section black py-1 ">
+    <!-- <section class="search-section black py-1 ">
         <div class="search-component d-flex flex-column ">
             <h2 class="mx-auto text-white my-1 py-2 text-center">..Search  your gym Here..</h2>
             
@@ -89,7 +97,14 @@
                 <div class="btn btn-outline-warning"><i class="fa fa-map-marker" aria-hidden="true"></i> Use Location</div>
             </div>
         </div>
+    </section> -->
+    <section class="new-search">
+
     </section>
+
+
+
+
     <section class="fit-services black border-top">
         <h2 class="text-center text-light">PUSH YOUR LIMIT FORWARD </h1>
         <h3 class="mx-auto text-center text-danger my-1 py-2"> <em>Why to choose US</em></h3>
@@ -98,7 +113,7 @@
                     <div class="card front-face">
                         
                         <img src="./images/pocketfriendly.jpg">
-                        <h2 class=" h3  pt-5 ml-2 text-white  "> In Budget Gym</h2>
+                        <h2 class=" h3  pt-5 ml-2 text-white text-center "> In Budget Gym</h2>
                     </div>
                 <div class="card back-face">
                         <img src="https://images.unsplash.com/photo-1492288991661-058aa541ff43?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80">
@@ -120,7 +135,7 @@
             <div class="wrapper">
                 <div class="card front-face">
                     <img src="./images/diet.jpg">
-                    <h2 class=" h3  pt-5 ml-3 text-white  ">Nutrition Plans</h2>
+                    <h2 class=" h3  pt-5 ml-3 text-white text-center ">Nutrition Plans</h2>
                 </div>
             <div class="card back-face">
                     <img src="https://images.unsplash.com/photo-1492288991661-058aa541ff43?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80">
@@ -142,7 +157,7 @@
             <div class="wrapper">
                 <div class="card front-face">
                     <img src="./images/trainer.jpg">
-                    <h2 class="h3  pt-5 ml-4 text-white  ">Best Trainers</h2>
+                    <h2 class="h3  pt-5 ml-2 text-white text-center ">Best Trainers</h2>
                 </div>
             <div class="card back-face">
                     <img src="https://images.unsplash.com/photo-1492288991661-058aa541ff43?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80">
@@ -164,7 +179,7 @@
             <div class="wrapper">
                 <div class="card front-face">
                     <img src="./images/needs.jpg">
-                    <h2 class="h3  pt-5  text-light">Unique to Needs</h2>
+                    <h2 class="h3  pt-5  text-light text-center">Unique to Needs</h2>
                 </div>
             <div class="card back-face">
                     <img src="https://images.unsplash.com/photo-1492288991661-058aa541ff43?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80">
@@ -271,21 +286,64 @@
         <div class="popular-card d-flex justify-content-center py-3 flex-wrap">
 
 
-            <div class="card text-center mx-3 " style="width: 18rem;">
+            <div class="card text-center mx-3 my-2" style="width: 16rem;">
                 <img class="card-img-top "  src="./images/d.jpg"  alt="Card image cap">
                 
                         
                 
-                <div class="card-body">
-                    <h5 class="card-title  h4">Diet Plan</h5>
-                    <a href="#" class="btn btn-outline-gray h4"> Check More ></a>
+                <div class="card-body py-1">
+                    <h5 class="card-title  h4 py-0 my-0">Diet Plan</h5>
+                    <p class="py-0 my-0 small"> We help you to get your diet planned by TOP NUTRITIONIST.</p>
                 </div>
                
-            </div>
-
+            
 
            
         </div>
+            <div class="card text-center mx-3 my-2" style="width: 16rem;">
+                <img class="card-img-top "  src="./images/d.jpg"  alt="Card image cap">
+                
+                        
+                
+                <div class="card-body py-1">
+                    <h5 class="card-title  h4 py-0 my-0">Leaderboard</h5>
+                    <p class="py-0 my-0 small ">Here you can compare and see your rank with other gym-mates.</p>
+                </div>
+               
+            
+
+           
+        </div>
+            <div class="card text-center mx-3 my-2" style="width: 16rem;">
+                <img class="card-img-top "  src="./images/d.jpg"  alt="Card image cap">
+                
+                        
+                
+                <div class="card-body py-1">
+                    <h5 class="card-title  h4 py-0 my-0">Fit-मित्र</h5>
+                    <p class="py-0 my-0 small">we provide platform to make your own gym companion to gym with.</p>
+                </div>
+               
+            
+
+           
+        </div>
+            <div class="card text-center mx-3 my-2" style="width: 16rem;">
+                <img class="card-img-top "  src="./images/d.jpg"  alt="Card image cap">
+                
+                        
+                
+                <div class="card-body py-1">
+                    <p class="card-title  h5 py-0 my-0">Hygine Environment<br><span  class="text-danger small">(Covid-Free*)</span></h5>
+                    <p class="py-0 my-0 small">Promise to provide you hygine and covid-free environment which lets you gym without any worry.</p>
+                </div>
+               
+            
+
+           
+        </div>
+
+
        </div>
 </section>
 
@@ -305,11 +363,11 @@
       <div class="row d-flex justify-content-center">
   
     
-        <div class="col-md-6">
+        <div class="col-md-6 ">
   
           <!-- Video -->
-          <div class="embed-responsive embed-responsive-16by9 mb-4">
-            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/vlDzYIIOYmM"
+          <div class="embed-responsive embed-responsive-16by9 mb-4 ">
+            <iframe class="embed-responsive-item owl-carousel" src="https://www.youtube.com/embed/vlDzYIIOYmM"
               allowfullscreen></iframe>
           </div>
   
@@ -329,21 +387,21 @@
 <!-- video sectionn end-->
 <!-- footer sectionn -->
 
-<footer class="page-footer font-small bg-dark text-white lighten-3 pt-4">
+<footer class="page-footer font-small  text-white lighten-3 pt-4 black">
 
     <!-- Footer Links -->
-    <div class="container text-center text-md-left">
+    <div class="container text-center text-md-left black">
   
       <!-- Grid row -->
       <div class="row">
   
         <!-- Grid column -->
-        <div class="col-md-4 col-lg-3 mr-auto my-md-4 my-0 mt-4 mb-1">
+        <div class="col-md-4 col-lg-3 mr-auto my-md-2 my-0 mt-2 mb-1">
   
           <!-- Content -->
-          <h1 class="font-weight-bold text-uppercase mb-4">fitcoon</h1>
-          <p>Here you can use rows and columns to organize your footer content.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit amet numquam iure provident voluptate
+          <h2 class="font-weight-bold text-uppercase mb-3">fitcoon</h2>
+          <p class="small">Here you can use rows and columns to organize your footer content.</p>
+          <p class="small my-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit amet numquam iure provident voluptate
             esse
             quasi, veritatis totam voluptas nostrum.</p>
   
@@ -353,15 +411,15 @@
         <hr class="clearfix w-100 d-md-none">
   
         <!-- Grid column -->
-        <div class="col-md-2 col-lg-2 mx-auto my-md-4 my-0 mt-4 mb-1">
+        <div class="col-md-2 col-lg-2 mx-auto my-md-4 my-0 mt-1 mb-1">
   
           <!-- Links -->
           <h5 class="font-weight-bold text-uppercase mb-4">About</h5>
   
-          <ul class="list-unstyled">
+          <ul class="list-unstyled small ">
             <li>
               <p>
-                <a href="#!">PROJECTS</a>
+                <a href="#!" class=" "></a>
               </p>
             </li>
             <li>
@@ -371,12 +429,12 @@
             </li>
             <li>
               <p>
-                <a href="#!">BLOG</a>
+                <a href="#!">CONTACT US</a>
               </p>
             </li>
             <li>
               <p>
-                <a href="#!">AWARDS</a>
+                <a href="#!">HELP!!</a>
               </p>
             </li>
           </ul>
@@ -384,73 +442,84 @@
         </div>
         <!-- Grid column -->
   
-        <hr class="clearfix w-100 d-md-none">
+        <hr class="clearfix py-0 w-100 d-md-none">
   
         <!-- Grid column -->
-        <div class="col-md-4 col-lg-3 mx-auto my-md-4 my-0 mt-4 mb-1">
+        <div class="col-md-8 col-lg-4 mx-auto  my-0 mt-2 mb-1 d-flex justify-content-between ">
   
           <!-- Contact details -->
-          <h5 class="font-weight-bold text-uppercase mb-4">Address</h5>
+          
   
-          <ul class="list-unstyled">
+          <ul class="list-unstyled small ml-0 float-left">
+              <li>
+                <h5 class=" text-uppercase mb-2 ">Address</h5>
+              </li>
             <li>
               <p>
-                <i class="fas fa-home mr-3"></i> New York, NY 10012, US</p>
+                <i class="fas fa-home mr-3 "></i> New York, NY 10012, US</p>
+            </li>
+            <li>
+              <p> <a href="https://mail.google.com/mail/?view=cm&fs=1&to=Officialgym@fitcoon.com" class="footer" target="_blank">
+                <i class="fas fa-envelope mr-3  float-left"></i> Officialgym@fitcoon.com</a></p>
+                
             </li>
             <li>
               <p>
-                <i class="fas fa-envelope mr-3"></i> fitcoon@gmail.com</p>
+               <!-- <a  herf="tel:+919113762945"><i class="fas fa-phone mr-3 float-left"></i> + 01 234 567 88</p></a>  -->
+               <a href="tel:919113762945"><i class="fas fa-phone mr-3 float-left"></i>Call infoware</a>
             </li>
             <li>
-              <p>
-                <i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
-            </li>
-            <li>
-              <p>
-                <i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+              <p><a href="https://api.whatsapp.com/send?phone=+919424197232&text=I%20want%20to%20talk%20to%20you%20Infoware" target="_blank"><i class="fas fa-print mr-3 float-left"></i>whatsapp Us</a>
+                </p>
             </li>
           </ul>
+          <div class="my-1 d-flex flex-column ">
+  
+            <!-- Social buttons -->
+            <ul class="list-unstyled text-center float-right ">
+                <li>
+                    <p class="text-uppercase mb-1 text-warning small text-center">Follow</p>
+                </li>
+                <li>
+                    <a type="button" class="btn-floating btn-fb py-1">
+                        <i class="fab fa-facebook-f  fa-lg  "></i>
+                    </a>
+                </li>
+                <li>
+                    <a type="button" class="btn-floating btn-tw py-1 ">
+                        <i class="fab fa-twitter    "></i>
+                    </a>
+                </li>
+                <li>
+                    <a type="button" class="btn-floating btn-gplus py-1">
+                        <i class="fab fa-google-plus-g  "></i>
+                    </a>
+                </li>
+                <li>
+                    <a type="button" class="btn-floating btn-dribbble py-1">
+                        <i class="fab fa-instagram fa-lg  "></i>
+                      </a>
+                </li>
+
+
+            </ul>
+
+          </div>
   
         </div>
         <!-- Grid column -->
   
-        <hr class="clearfix w-100 d-md-none">
+        <hr class=" w-100 d-md-none my-1 py-1">
   
-        <!-- Grid column -->
-        <div class="col-md-2 col-lg-2 text-center mx-auto my-4 d-flex flex-column ">
-  
-          <!-- Social buttons -->
-          <h5 class="font-weight-bold text-uppercase mb-4">Follow Us</h5>
-  
-          <!-- Facebook -->
-          <a type="button" class="btn-floating btn-fb py-2">
-            <i class="fab fa-facebook-f fa-lg btn-facebook py-4 px-4 "></i>
-          </a>
-          <!-- Twitter -->
-          <a type="button" class="btn-floating btn-tw py-2 ">
-            <i class="fab fa-twitter btn-round py-4 px-4 "></i>
-          </a>
-          <!-- Google +-->
-          <a type="button" class="btn-floating btn-gplus py-2">
-            <i class="fab fa-google-plus-g py-4  px-4 btn-round"></i>
-          </a>
-          <!-- Dribbble -->
-          <a type="button" class="btn-floating btn-dribbble py-2">
-            <i class="fab fa-instagram fa-lg py-4 px-4 btn-round"></i>
-          </a>
-  
-        </div>
-        <!-- Grid column -->
+
   
       </div>
-      <!-- Grid row -->
+
   
     </div>
-    <!-- Footer Links -->
-  
-    <!-- Copyright -->
-    <div class="footer-copyright text-center py-3">© 2020 Copyright:
-      <a href=""> Fitcoon.com</a>
+
+    <div class="footer-copyright text-center py-1 ">© 2020 Copyright:
+      <a href="" class="text-white"> Fitcoon.com</a>
     </div>
     <!-- Copyright -->
   
@@ -482,7 +551,7 @@
     center:true,
     margin:5,
     autoplay:true,
-    nav:true,
+    // nav:true,
     autoWidth:true,
     responsive:{
         0:{
