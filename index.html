@@ -24,16 +24,17 @@
             <ul>
                 <li><a class="" href="#">Home</a></li>
                 
-                <li><div class="dropdown">
-                    <a class=" dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="false" aria-expanded="false">
+                <li> <div>
+                     <a id="services">
                       Services
-                    </a>
-                    <div class="dropdown-menu " aria-labelledby="dropdownMenuButton">
-                      <a class="dropdown-item" href="#">Diet-Plan</a>
-                      <a class="dropdown-item" href="#">Fit-मित्र</a>
-                      <a class="dropdown-item" href="#">here</a>
+                    </a> 
+                   <div id="serviceOptions">
+                      <p><a href="#">Diet-Plan</a></p>
+                      <p><a href="#">Fit-मित्र</a></p>
+                      <p><a href="#">here</a></p>
                     </div>
-                  </div></li>
+                  </div>
+                </li>
                 <li><a href="#">Leaderboard</a></li>
                 <li><a href="#">Fitcoon TV</a></li>
                 <li><a href="#" class=""><button>SIGNUP</button></a></li>
@@ -79,14 +80,27 @@
     </div>
     <!-- COVER PIC ENDS -->  
 
-    <!-- <section class="search-section black py-1 ">
+    <section class="search-section black py-1 ">
         <div class="search-component d-flex flex-column ">
             <h2 class="mx-auto text-white my-1 py-2 text-center">..Search  your gym Here..</h2>
-            
-            <div class="search-bar mx-auto my-4 ">
-                <input class="float-left"
-                type=" text" placeholder="Search here">
-                <i class="fa fa-search " aria-hidden="true"></i>
+            <div id="landingPageSearch">
+                <div class="topDiv">
+                    <input type="search" id="IstSearch" placeholder="what">
+                    <div id="IstSearchOptions">
+                    <p>ALl</p>
+                    <p>One</p>
+                    <p>second</p>
+                    </div>
+                </div>
+                <div class="topDiv">
+                    <input type="search" id="IIndSearch" placeholder="where">
+                    <div id="IIndSearchOptions">
+                        <p>ALl</p>
+                        <p>One</p>
+                        <p>second</p>
+                        </div>
+                </div>
+              <button>Search</button>
             </div>
             <div class="filter-option ">
                 <div class="btn btn-disable btn-outline-light">Filter</div>
@@ -97,10 +111,8 @@
                 <div class="btn btn-outline-warning"><i class="fa fa-map-marker" aria-hidden="true"></i> Use Location</div>
             </div>
         </div>
-    </section> -->
-    <section class="new-search">
-
     </section>
+  
 
 
 
@@ -571,6 +583,35 @@
         }
     }
 })
+document.getElementById('services').addEventListener('click',()=>{
+    if( document.getElementById('serviceOptions').style.display == 'block'){
+        document.getElementById('serviceOptions').style.display = 'none';
+    }
+    else{
+        document.getElementById('serviceOptions').style.display = 'block';
+    }
+});
+
+document.getElementById('IstSearch').addEventListener('click',()=>{
+             document.getElementById('IstSearchOptions').style.display = 'block';
+        });
+        document.getElementById('IIndSearch').addEventListener('click',()=>{
+             document.getElementById('IIndSearchOptions').style.display = 'block';
+        });
+        const option1 = document.querySelectorAll('#IstSearchOptions p');
+        for(let i=0;i<option1.length;i++){
+             option1[i].addEventListener('click',()=>{
+                document.getElementById('IstSearch').setAttribute('value',option1[i].innerHTML);
+                document.getElementById('IstSearchOptions').style.display = 'none';
+             })
+        }
+        const option2 = document.querySelectorAll('#IIndSearchOptions p');
+        for(let i=0;i<option2.length;i++){
+             option2[i].addEventListener('click',()=>{
+                document.getElementById('IIndSearch').setAttribute('value',option2[i].innerHTML);
+                document.getElementById('IIndSearchOptions').style.display = 'none';
+             })
+        }
  </script>
 </body>
 </html>
